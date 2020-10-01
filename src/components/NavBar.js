@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Nav = styled.nav`
@@ -30,7 +31,7 @@ const LogoNavItem = styled(NavItem)`
   }
 `;
 
-const NavLink = styled.a`
+const NavLink = styled(Link)`
   text-decoration: none;
   color: ${(props) => props.theme.textColor};
 `;
@@ -39,13 +40,13 @@ export default function NavBar() {
   return (
     <Nav>
       <LogoNavItem>
-        <NavLink href="/">Pivot, Inc</NavLink>
+        <NavLink to="/">Pivot, Inc</NavLink>
       </LogoNavItem>
       <NavItem>
-        <NavLink href="/signup">Sign Up</NavLink>
+        <NavLink to="/signup">Sign Up</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="/signin">Sign In</NavLink>
+        <NavLink to="/signin">Sign In</NavLink>
       </NavItem>
     </Nav>
   );
