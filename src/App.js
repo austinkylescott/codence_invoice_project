@@ -21,7 +21,7 @@ function App() {
           <NavBar />
           <Switch>
             <Route exact path="/">
-              Main Page
+              Welcome to Pivot, Inc!
             </Route>
             <Route path="/signup">
               <SignUp />
@@ -29,7 +29,7 @@ function App() {
             <Route path="/signin">
               <SignIn />
             </Route>
-            <Route path="/invoice/new">
+            <Route path="/invoices/new">
               <NewInvoice />
             </Route>
           </Switch>
