@@ -35,7 +35,6 @@ function App() {
           </Switch>
         </ThemeProvider>
       </div>
-      END OF APP
     </Router>
   );
 }
